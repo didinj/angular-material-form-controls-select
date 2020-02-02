@@ -1,0 +1,24 @@
+<mat-form-field class="field-full-width">
+  <mat-label>UEFA Group</mat-label>
+  <mat-select (selectionChange)="showTeams($event)">
+    <mat-option *ngFor="let group of groups" [value]="group">
+      {{group.groupName}}
+    </mat-option>
+  </mat-select>
+</mat-form-field>
+<mat-form-field class="field-full-width">
+  <mat-label>Group Team</mat-label>
+  <mat-select (selectionChange)="showPlayers($event)">
+    <mat-option *ngFor="let team of teams" [value]="team">
+      {{team.teamName}}
+    </mat-option>
+  </mat-select>
+</mat-form-field>
+<mat-form-field class="field-full-width">
+  <mat-label>Team Player</mat-label>
+  <mat-select>
+    <mat-option *ngFor="let player of players" [value]="player.playerName">
+      {{player.playerName}}
+    </mat-option>
+  </mat-select>
+</mat-form-field>

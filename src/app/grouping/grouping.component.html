@@ -1,0 +1,11 @@
+<mat-form-field>
+  <mat-label>UEFA Champions Team</mat-label>
+  <mat-select>
+    <mat-optgroup *ngFor="let group of groups" [label]="group.groupName"
+                  [disabled]="group.disabled">
+      <mat-option *ngFor="let team of group.teams" [value]="team.teamName">
+        {{team.teamName}}
+      </mat-option>
+    </mat-optgroup>
+  </mat-select>
+</mat-form-field>

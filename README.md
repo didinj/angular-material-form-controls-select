@@ -1,4 +1,6 @@
-# MaterialSelect
+# Angular Material Form Controls Select (mat-select) Example
+
+This source code is part of [Angular Material Form Controls Select (mat-select) Example]().
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.3.24.
 
